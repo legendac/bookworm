@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: bookworm
+  host: bookworm
+  disk_quota: 1024M
+  services:
+  - bookworm-cloudantNoSQLDB
+  - Conversation-4u
+  - API Connect-sd
